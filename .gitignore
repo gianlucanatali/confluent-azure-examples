@@ -1,0 +1,26 @@
+
+*.DS_Store
+
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+
+# Enrionment specific configuration files
+.env
+ccloud.properties
+ccloud2.properties
+
+**/gcs_creds.json
+
+demo.config
+demo_config.json
+demo_config.json*
+!demo_config.json.example
+
+*.log

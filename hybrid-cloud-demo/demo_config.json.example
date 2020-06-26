@@ -1,0 +1,39 @@
+{ 
+    "demo_type": "azure", 
+    "demo_name": "<Demo prefix just lowcase chars>",
+    "ccloud": {
+        "credentials":{
+            "myaccount": {
+                "url": "https://confluent.cloud",
+                "username": "<YOUR_CCLOUD_USERNAME>",
+                "password": "<YOUR_CCLOUD_PASSWORD>",
+                "environment_name": "<CCLOUD Environment to create>" 
+            }
+        },
+        "schema_registry": {
+            "ccloud": "myaccount",
+            "cloud_provider": "azure",
+            "cloud_geo": "eu"
+        },
+        "cluster_1": {
+            "ccloud": "myaccount",
+            "name": "azure_hybrid_demo",
+            "cloud_provider": "azure",
+            "cloud_region": "westeurope",
+            "topics_to_create": ""
+        }
+    },
+    "azure": {
+        "subscription_id": "<YOUR_AZURE_SUBSCRIPTION_ID>",
+        "client_id": "<YOUR_AZURE_CLIENT_ID>",
+        "client_secret": "<YOUR_AZURE_CLIENT_SECRET>",
+        "tenant_id": "<YOUR_AZURE_TENANT_ID>",
+        "location": "westeurope",
+        "vm": {
+            "username": "confluent",
+            "password": "Confluent123!",
+            "type": "Standard_DS3_v2"
+        }
+    }
+
+}
